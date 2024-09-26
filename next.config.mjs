@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+const nextConfig = {
+  plugins: [
+    new MiniCssExtractPlugin(),
+  ],
+};
 
 export default nextConfig;
